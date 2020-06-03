@@ -1,0 +1,289 @@
+/*
+  All styles should be listed alphabetically.
+  
+  the only exception is for ID tags, which are organized in their own group 
+  following the standard tag styles..
+*/
+
+
+/* -------------- Tag styles -------------- */
+a {
+  font: Arial;
+  font-size:24px;
+  color: #000088;
+  text-decoration: none;
+  padding: 0px;
+}
+
+a:hover {
+  /*text-shadow: 0 0 3px #000000;*/
+  font-size: 24px;
+  color: #000088;
+  padding: 0px;
+}
+
+body {
+  background: #eeeeee;
+  color: #000000;
+}
+
+button {
+  display: inline;
+}
+
+div {
+  background-color: #cccccc;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 70%;
+}
+
+div.body {
+  background-color: #eeeeee;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div.divsub {
+  background-color: #cccccc;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  width: 30%;
+}
+
+.card {
+  background-color: antiquewhite;
+}
+
+.card-hrt {
+  background-color: yellow;
+}
+
+.card-clb {
+  background-color: green;
+}
+
+.card-dmn {
+  background-color: blue;
+}
+
+.card-spd {
+  background-color: red;
+}
+
+.sidenav {
+  width: 100%;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a {
+  width: 100%;
+  float: center;
+  font-size: 100%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: #333;
+  float: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidenav a:hover, .sidebar:hover .dropbtn {
+  background-color: #cc00bb;
+}
+
+/* Topbar menu styling */
+.navbar {
+  overflow: hidden;
+  overflow-x: auto;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: center;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  width: auto;
+  background-color: #333;
+  display: inline;
+  float: center;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  float: center;
+  background-color: inherit;   
+  border: none;
+  color: white;
+  display: inline;
+  font-family: inherit;
+  font-size: 18px;
+  margin: 0;
+  outline: none;
+  padding: 14px 16px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #cc00bb;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+font {
+  font-family: Georgia, serif;
+}
+
+font.ti {
+  color:#333333;
+  text-shadow:2px 3px 3px #000000;
+}
+
+hr {
+  color: #cccccc;
+}
+
+/* Allow divs to reach the edge of a page */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  left: 10px;
+  top: 30px;
+}
+
+img.body {
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img.head1 {
+	width: 100px;
+}
+
+img.head2 {
+	width: 300px;
+}
+
+p {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+  font-family: Arial;
+  font-size: 20px;
+  size: 100%;
+  color: #222222;
+}
+
+p.header {
+  text-align: center;
+}
+
+p.story {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+}
+p.dialog {
+  margin-left: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+}
+p.thought {
+  font-style: italic;
+  margin-left: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+}
+
+
+
+/* -------------- ID styles -------------- */
+#BannerLink {
+  margin: 2%;
+}
+
+#bubble {
+  width:60%;
+  border:2px solid;
+  margin: 1.5%;
+  border-radius:20px;
+  border-color:#ffffff;
+  background-color:#eeeeee;
+}
+
+#clicker {
+  border-radius: 165px;
+  border: 2px solid;
+  transition: border-radius 0.5s;
+  -webkit-transition: width 0.5s; /* Safari */
+}
+#clicker:hover {
+  border-radius: 30px;
+}
+
+#TopBar {
+  opacity: 1;
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+}
+
+#SideBar {
+  width: 14%;
+  margin: 0px;
+  left: 0;
+  top: 30%;
+  position: fixed;
+}
