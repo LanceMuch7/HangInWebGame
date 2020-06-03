@@ -55,6 +55,8 @@ div.divsub {
 
 .card {
   background-color: antiquewhite;
+  min-height: 2em;
+  min-width: 1em;
 }
 
 .card-hrt {
