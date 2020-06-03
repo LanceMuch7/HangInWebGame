@@ -1,0 +1,23 @@
+{
+  "name": "hangin",
+  "version": "1.0.0",
+  "description": "card game",
+  "main": "hi_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanceMuch7/HangInWebGame.git"
+  },
+  "author": "Gifthammer Games",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanceMuch7/HangInWebGame/issues"
+  },
+  "homepage": "https://github.com/LanceMuch7/HangInWebGame#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1"
+  }
+}
