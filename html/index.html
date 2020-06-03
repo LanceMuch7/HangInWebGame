@@ -9,12 +9,13 @@
 	<title>Hang In - Game</title>
 	<base target="_self">
 	<script src="includeHtml.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 
 <body>
 	<!-- Page header !-->
-	<div id="header" w3-include-html="Page Stubs/header.html" style="opacity: 1;width: 100%;height: 21%;margin: 0px;position: fixed;"></div> 
+	<div id="TopBar" w3-include-html="Page Stubs/header.html" style="opacity: 1;width: 100%;height: 11em;margin: 0px;position: fixed;"></div> 
 	<br />
 	
 	<!-- Create blank space so that the banner doesn't block content !-->
@@ -25,7 +26,8 @@
 	<hr />
 	
 	<!-- Page Title goes here !-->
-	<h2 style="text-align: center;">Home</h2>
+	<h2 style="text-align: center;">Hang In</h2>
+	<h5 style="text-align: center;">Hang in there or be left hangin'!</h5>
 	
 	<br />
 	<!-- Any content should follow this line !-->
@@ -33,6 +35,15 @@
 	<p>
 		Plz 2 put gaem heer
 	</p>
+
+	<div id="player" align="center">
+		<div id="card" w3-include-html="Page Stubs/card.html" align="center"></div>
+		<div id="card" w3-include-html="Page Stubs/card.html" align="center"></div>
+		<div id="card" w3-include-html="Page Stubs/card.html" align="center"></div>
+		<p align="center">
+			Ur naem
+		</p>
+	</div>
 
 	<!-- Any content should stay above this line !-->
 	<br />
