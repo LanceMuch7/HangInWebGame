@@ -103,11 +103,12 @@ div.divsub {
 }
 
 .sidenav a:hover, .sidebar:hover .dropbtn {
-  background-color: #cc00bb;
+  background-color: #aaa;
 }
 
 /* Topbar menu styling */
 .navbar {
+  width: 100%;
   overflow: hidden;
   overflow-x: auto;
   background-color: #333;
@@ -124,15 +125,12 @@ div.divsub {
 }
 
 .dropdown {
-  width: auto;
   background-color: #333;
   display: inline;
-  float: center;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  float: center;
   background-color: inherit;   
   border: none;
   color: white;
@@ -145,7 +143,7 @@ div.divsub {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #cc00bb;
+  background-color: #aaa;
 }
 
 .dropdown-content {
@@ -208,14 +206,6 @@ img.body {
   display: block;
 }
 
-img.head1 {
-	width: 100px;
-}
-
-img.head2 {
-	width: 300px;
-}
-
 p {
   padding-left: 2%;
   padding-right: 2%;
@@ -275,11 +265,21 @@ p.thought {
   border-radius: 30px;
 }
 
+#Header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #TopBar {
   opacity: 1;
   width: 100%;
   margin: 0px;
   position: fixed;
+  height: 11em;
 }
 
 #SideBar {
