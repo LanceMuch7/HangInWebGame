@@ -1,0 +1,87 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../styles.css" />
+	<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+p {
+	font-size: 12px;
+}
+	</style>
+</head>
+
+<body>
+	<h2>How to Play</h2>
+
+	<!-- Section -->
+	<button type="button" class="collapsible">
+		Getting Started
+	</button>
+	<div class="content">
+		<p>Each player is dealt 1 card more than the number of players. The card values are based on a standard playing deck, as are the suits.</p>
+		<br />
+	</div>
+
+	<!-- Section -->
+	<button type="button" class="collapsible">
+		Phase 1: The Pot
+	</button>
+	<div class="content">
+		<p>blah blah</p>
+		<br />
+	</div>
+		
+	<!-- Section -->
+	<button type="button" class="collapsible">
+		Phase 2: Scoring
+	</button>
+	<div class="content">
+		<p>Now that a player has been chosen to complete the task, it is the table's chance to crumble their hopes of an easy victory!</p>
+		<p>The table takes turns round robin, one player versus the House at a time. The table player plays their card to decide the suit, and the House must beat it in suit and value in order to claim that player's slice of the pot.</p>
+		<p>In the case of two House players, both must individually beat the table's card. The player that plays the highest card gets to claim the higher card from that slice of the pot, or both if the other House player did not beat the table's card.</p>
+		<br />
+	</div>
+
+
+
+	<!-- Collapsible Panel Script -->
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>

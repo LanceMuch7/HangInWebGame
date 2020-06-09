@@ -53,37 +53,6 @@ div.divsub {
   width: 30%;
 }
 
-.sidebar {
-  width: 100%;
-  background-color: #333;
-  float: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.sidenav {
-  width: 100%;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sidenav a {
-  width: 100%;
-  float: center;
-  font-size: 100%;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 10px;
-}
-
-.sidenav a:hover, .sidebar:hover .dropbtn {
-  background-color: #aaa;
-}
-
 /* Topbar menu styling */
 .navbar {
   width: 100%;
@@ -224,7 +193,7 @@ p.thought {
   margin: 2%;
 }
 
-#bubble {
+.bubble {
   width:60%;
   border:2px solid;
   margin: 1.5%;
@@ -233,17 +202,17 @@ p.thought {
   background-color:#eeeeee;
 }
 
-#clicker {
+.clicker {
   border-radius: 165px;
   border: 2px solid;
   transition: border-radius 0.5s;
   -webkit-transition: width 0.5s; /* Safari */
 }
-#clicker:hover {
+.clicker:hover {
   border-radius: 30px;
 }
 
-#Header {
+.Header {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -252,7 +221,7 @@ p.thought {
   background-repeat: no-repeat;
 }
 
-#TopBar {
+.TopBar {
   opacity: 1;
   width: 100%;
   margin: 0px;
@@ -260,15 +229,19 @@ p.thought {
   height: 11em;
 }
 
-#SideBar {
-  width: 14%;
+.SideBar {
+  width: 20%;
+  height: 60%;
+  background-color: #ccc;
+  border-width: 0;
+  float: center;
   margin: 0px;
-  left: 0;
+  right: 0;
   top: 30%;
   position: fixed;
 }
 
-#Card {
+.Card {
   background-color: antiquewhite;
   min-height: 2em;
   min-width: 1em;
@@ -277,18 +250,18 @@ p.thought {
   margin-right: auto;
 }
 
-#Card-hrt {
+.Card-hrt {
   background-color: yellow;
 }
 
-#Card-clb {
+.Card-clb {
   background-color: green;
 }
 
-#Card-dmn {
+.Card-dmn {
   background-color: blue;
 }
 
-#Card-spd {
+.Card-spd {
   background-color: red;
 }

@@ -2,6 +2,7 @@
 
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -15,7 +16,7 @@
 
 <body>
 	<!-- Page header !-->
-	<div id="TopBar" w3-include-html="Page Stubs/header.html" style="opacity: 1;width: 100%;height: 11em;margin: 0px;position: fixed;"></div> 
+	<div class="TopBar" w3-include-html="Page Stubs/header.html" style="opacity: 1;width: 100%;height: 11em;margin: 0px;position: fixed;"></div> 
 	<br />
 	
 	<!-- Create blank space so that the banner doesn't block content !-->
@@ -31,9 +32,9 @@
 		Plz 2 put gaem heer
 	</p>
 
-	<div id="player" align="center">
-		<div id="Card" ></div>
-		<div id="Card">
+	<div class="player" align="center">
+		<div class="Card" ></div>
+		<div class="Card">
 			<p>8</p>
 			<p></p>
 		</div>
@@ -48,6 +49,8 @@
 	
 	<hr />
 	</div>
+
+	<iframe src="Page Stubs/rules.html" class="SideBar"></iframe>
 	
 	<!-- Call the import function !-->
 	<script>
