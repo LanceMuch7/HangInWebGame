@@ -232,7 +232,7 @@ p.thought {
 .SideBar {
   width: 20%;
   height: 60%;
-  background-color: rgba(0,0,0,1);
+  background-color: transparent;
   border-width: 0;
   float: center;
   margin: 0px;
