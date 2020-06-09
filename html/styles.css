@@ -232,7 +232,7 @@ p.thought {
 .SideBar {
   width: 20%;
   height: 60%;
-  background-color: #ccc;
+  background-color: rgba(0,0,0,1);
   border-width: 0;
   float: center;
   margin: 0px;
@@ -243,11 +243,11 @@ p.thought {
 
 .Card {
   background-color: antiquewhite;
-  min-height: 2em;
-  min-width: 1em;
+  position: relative;
+  width: 100%;
+  padding-top: 20%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4px;
 }
 
 .Card-hrt {
