@@ -27,7 +27,8 @@
   transition: max-height 0.2s ease-out;
 }
 p {
-  font-size: 12px;
+  text-align: left;
+  font-size: 14px;
 }
 	</style>
 </head>
@@ -40,7 +41,9 @@ p {
 		Getting Started
 	</button>
 	<div class="content">
-		<p>Each player is dealt 1 card more than the number of players. The card values are based on a standard playing deck, as are the suits.</p>
+		<p>A starting hand is 1 card more than the number of players.</p>
+		<p>Example: If there are 4 players, each gets dealt 5 cards.</p>
+		<p>Card values are based on a standard playing deck, as are the suits.</p>
 		<br />
 	</div>
 
@@ -49,18 +52,34 @@ p {
 		Phase 1: The Pot
 	</button>
 	<div class="content">
-		<p>blah blah</p>
+		<p>The game begins by each player, in round robin, choosing whether to add a card to the pot or pass.</p>
+		<P>If playing with physical cards, the player to the dealer's left starts. In this web version, the host player always starts.</P>
+		<p>This goes around twice, allowing each player to add up to 2 cards to the pot.</p>
+		<p>Once both rotations of round robin are done, the player that contributes the highest total value to the pot gets to claim it.</p>
 		<br />
 	</div>
-		
+	
 	<!-- Section -->
 	<button type="button" class="collapsible">
 		Phase 2: Scoring
 	</button>
 	<div class="content">
-		<p>Now that a player has been chosen to complete the task, it is the table's chance to crumble their hopes of an easy victory!</p>
-		<p>The table takes turns round robin, one player versus the House at a time. The table player plays their card to decide the suit, and the House must beat it in suit and value in order to claim that player's slice of the pot.</p>
-		<p>In the case of two House players, both must individually beat the table's card. The player that plays the highest card gets to claim the higher card from that slice of the pot, or both if the other House player did not beat the table's card.</p>
+		<p>Now that a player has claimed the pot, it is the table's chance to crumble their hopes of an easy victory!</p>
+		<p>The table goes round robin, one player against the House at a time.</p>
+		<p>The table player plays a card to decide the suit, and the House must beat its value in order to claim that player's slice of the pot.</p>
+		<p>The House must play within the suit set by the table, otherwise they must play a card at least triple the table's value.</p>
+		<br />
+	</div>
+
+	<!-- Section -->
+	<button type="button" class="collapsible">
+		Ties
+	</button>
+	<div class="content">
+		<p>If a tie happens in phase 1, both tied players will become House for the second phase.</p>
+		<p>Both House players must individually match or beat the table's card. The player that plays the highest card gets to claim the more valuable card from that slice of the pot.</p>
+		<p>If one House player does not beat the table's card, then the other gets to claim both cards from the pot.</p>
+		<p>If a ties happens again in phase 2 between the House players, then the player that played their card first takes the higher value card from the pot.</p>
 		<br />
 	</div>
 
