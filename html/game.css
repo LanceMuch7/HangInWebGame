@@ -1,0 +1,66 @@
+
+/* -------------- Tag styles -------------- */
+div {
+    background: none;
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* -------------- Class styles -------------- */
+.player {
+    width: 100%;
+    align-items: left;
+    text-indent: 0%;
+}
+
+.Card {
+    background-color: antiquewhite;
+    position: relative;
+    max-width: 40em;
+    max-height: 80em;
+    display: block;
+    margin: 4px;
+  }
+  
+  .Card-hrt {
+    background-color: yellow;
+  }
+  
+  .Card-clb {
+    background-color: green;
+  }
+  
+  .Card-dmn {
+    background-color: blue;
+  }
+  
+  .Card-spd {
+    background-color: red;
+  }
+  
+  .cdnum1 {
+      width: 100%;
+      height: 10%;
+      top: 0;
+      text-align: right;
+      padding-bottom: 4em;
+  }
+  
+  .cdnum2 {
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    text-align: left;
+    padding-top: 4em;
+}

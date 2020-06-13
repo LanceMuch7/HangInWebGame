@@ -1,0 +1,59 @@
+<html>
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+	<link rel="manifest" href="Images/site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<meta name="discription" content="I FORGET WHAT THIS DOES" />
+	<title>Hang In - Game</title>
+	<base target="_self">
+	<script src="includeHtml.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+
+<body>
+	<div id="Join">
+		<form method="post" target="_blank">
+			<label for="tableID">Room ID</label>
+			<input type="text" name="tableID" value="Enter a 4-letter ID">
+			<br>
+			<input type="submit" value="Join">
+		</form>
+	</div>
+
+	<div id="Game" style="width: 90%"><hr /><br style="font-size: 4em;" />
+
+		<iframe src="Page Stubs/table.html" style="width: 100%;height: 30%;border-width: 0;"></iframe>
+		<br />
+
+		<div class="player">
+			<section>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+				<article><button class="Card" w3-include-html="Page Stubs/card.html"></button></article>
+			</section>
+			<p style="text-align: center;">
+				Ur naem
+			</p>
+		</div>
+
+	<!-- Any content should stay above this line !-->
+	<br /><hr /></div>
+
+	<!-- Call the import function !-->
+	<script>
+		includeHTML();
+	</script>
+</body>
+
+
+</html> 

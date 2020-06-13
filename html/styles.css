@@ -245,28 +245,3 @@ p.thought {
   width: 40%;
 
 }
-
-.Card {
-  background-color: antiquewhite;
-  position: relative;
-  width: 100%;
-  padding-top: 20%;
-  display: block;
-  margin: 4px;
-}
-
-.Card-hrt {
-  background-color: yellow;
-}
-
-.Card-clb {
-  background-color: green;
-}
-
-.Card-dmn {
-  background-color: blue;
-}
-
-.Card-spd {
-  background-color: red;
-}
