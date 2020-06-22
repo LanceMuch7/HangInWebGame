@@ -7,6 +7,7 @@ const DEBUG = true;
 
 // VARIABLES		///////////////////////////////
 var bodyParser = require('body-parser');
+var logic = require('./game_logic');
 
 
 // Init     	    ///////////////////////////////
@@ -24,14 +25,13 @@ app.use(express.static('html'));
 
 
 // Body			    ///////////////////////////////
-app.get('/api', async (req, res) => {
-	var ws = req.query.Workshop;
-	console.log(ws);
+// Handle GET requests
+app.get('/template', async (req, res) => {
+	var temp = req.query.someparam;
+	var reply
 
 	try {
-		var reply
-
-		if (!ws) {
+		if (!temp) {
             
 		} else {
             
@@ -43,20 +43,34 @@ app.get('/api', async (req, res) => {
 	}
 })
 
-app.post('/api', async (req, res) => {
-	var att = req.body.attendee;
-	var ws = req.body.Workshop;
+// Handle POST requests
+app.post('/template', async (req, res) => {
+	var temp = req.body.something;
 
-	if (!att) {
-		console.log(att);
-		res.json({error: 'Attendee parameter not given'});
-	} else if (!ws) {
-        
+	if (!temp) {
+		console.log(temp);
+		res.json({error: 'error'});
 	} else {
         
 	}
 })
 
+app.post('/join', async (req, res) => {
+	var table = req.body.table;
+
+	if (!temp) {
+		console.log(temp);
+		res.json({error: 'error'});
+	} else {
+        
+	}
+})
+
+// Handle PUT requests
+// Handle DELETE requests
+
+
+// Begin listening for requests
 app.listen(app.get('port'), () => {
 	console.log('Port '+port+' running');
 })
